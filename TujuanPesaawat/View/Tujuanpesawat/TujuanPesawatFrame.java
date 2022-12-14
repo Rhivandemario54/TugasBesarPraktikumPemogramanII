@@ -21,8 +21,8 @@ public class TujuanPesawatFrame {
     panel.add(dropdown1);
     JComboBox<String> dropdown2 = new JComboBox<>();
     dropdown2.addItem("Bandung");
-    dropdown2.addItem("Tujuan Penerbangan 2");
-    dropdown2.addItem("Tujuan Penerbangan 3");
+    dropdown2.addItem("Surabaya");
+    dropdown2.addItem("Malang");
     panel.add(dropdown2);
     // Tampilkan frame
     frame.pack();
