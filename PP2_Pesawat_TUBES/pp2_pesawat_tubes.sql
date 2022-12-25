@@ -71,9 +71,9 @@ CREATE TABLE `tujuan` (
 --
 
 INSERT INTO `tujuan` (`id`, `tujuanpen`) VALUES
-('1c71ea62-5d17-48e0-ac32-3907e8e45594', NULL),
-('2ba5e961-aa27-4779-8d0f-3df3b99d838b', NULL),
-('a1b25271-257f-4776-8577-dcc4d4624bdb', NULL),
+('1c71ea62-5d17-48e0-ac32-3907e8e45594', 'Jakarta'),
+('2ba5e961-aa27-4779-8d0f-3df3b99d838b', 'Bandung'),
+('a1b25271-257f-4776-8577-dcc4d4624bdb', 'Surabaya'),
 ('a9abb110-5105-4504-b67f-14b41ecab3be', NULL),
 ('be0d3c62-7558-4fae-bcdb-3b2b830d8cfa', NULL),
 ('cbb90b9c-056d-4d76-8f49-c8ba03ac8184', NULL),

@@ -1,20 +1,15 @@
 package view.tujuan;
 
 import model.Tujuan;
-
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.awt.event.ActionListener;
 import java.util.List;
-import javax.swing.JFrame;
-import javax.swing.ImageIcon;
-import javax.swing.JLabel;
 
 public class TujuanFrame extends JFrame {
     private List<Tujuan> tujuanList;
-    private final JTextField textFieldTujuan;
+    private final JTextField textFieldMermo;
     private TujuanTableModel tableModel;
     private final JTable table;
     private final JButton buttonSimpan;
@@ -25,24 +20,25 @@ public class TujuanFrame extends JFrame {
     public TujuanFrame() {
 
         this.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+
         // Tampilan >>>>
         carIcon = new ImageIcon(this.getClass().getResource("../bgwow.jpg"));
         myLabel = new JLabel(carIcon);
-        myLabel.setSize(1360,800);
+        myLabel.setSize(1360, 800);
         // Tampilan <<<<
-        // CSS Java untuk title apk dan icon 
+        // CSS Java untuk title apk dan icon
         this.setTitle("<< Aplikasi Sorum Nota >>");
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("../sorum.png")));
 
         JLabel labelTitlee1 = new JLabel(" Halaman Inputan Tujuan Pesawat ");
-        labelTitlee1.setBounds(50,15,350,10);
+        labelTitlee1.setBounds(110, 15, 350, 10);
         labelTitlee1.setForeground(Color.white);
 
-        JLabel labelInput = new JLabel("Tujuan Pesawat :");
-        labelInput.setBounds(15, 280, 350, 10);
+        JLabel labelInput = new JLabel("Tujuan penumpang :");
         labelInput.setForeground(Color.WHITE);
-        textFieldTujuan = new JTextField();
-        textFieldTujuan.setBounds(15, 300, 350, 30);
+        labelInput.setBounds(15, 280, 350, 10);
+        textFieldMermo = new JTextField();
+        textFieldMermo.setBounds(15, 300, 350, 30);
         buttonSimpan = new JButton("Simpan");
         buttonSimpan.setBounds(15, 340, 100, 40);
         buttonDelete = new JButton("Hapus");
@@ -53,23 +49,23 @@ public class TujuanFrame extends JFrame {
 
         this.add(buttonSimpan);
         this.add(buttonDelete);
-        this.add(textFieldTujuan);
+        this.add(textFieldMermo);
         this.add(labelInput);
         this.add(scrollableTable);
         this.add(labelTitlee1);
-        
         this.add(myLabel);
+
         this.setSize(400, 700);
         this.setLayout(null);
     }
 
     public String getJenis() {
-        return textFieldTujuan.getText();
+        return textFieldMermo.getText();
     }
 
     public void addTujuanpen(Tujuan tujuanpen) {
         tableModel.add(tujuanpen);
-        textFieldTujuan.setText("");
+        textFieldMermo.setText("");
     }
 
     public String takeTujuan() {

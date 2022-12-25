@@ -24,14 +24,14 @@ public class JumlahFrame extends JFrame {
         // Tampilan >>>>
         carIcon = new ImageIcon(this.getClass().getResource("../bgwow.jpg"));
         myLabel = new JLabel(carIcon);
-        myLabel.setSize(1360,800);
+        myLabel.setSize(1360, 800);
         // Tampilan <<<<
-        // CSS Java untuk title apk dan icon 
+        // CSS Java untuk title apk dan icon
         this.setTitle("<< Aplikasi Sorum Nota >>");
         this.setIconImage(Toolkit.getDefaultToolkit().getImage(getClass().getResource("../sorum.png")));
 
         JLabel labelTitlee1 = new JLabel(" Halaman Inputan jumlah penumpang ");
-        labelTitlee1.setBounds(110,15,350,10);
+        labelTitlee1.setBounds(110, 15, 350, 10);
         labelTitlee1.setForeground(Color.white);
 
         JLabel labelInput = new JLabel("jumlah penumpang :");
@@ -52,7 +52,7 @@ public class JumlahFrame extends JFrame {
         this.add(textFieldMermo);
         this.add(labelInput);
         this.add(scrollableTable);
-        this.add(labelTitlee1);        
+        this.add(labelTitlee1);
         this.add(myLabel);
 
         this.setSize(400, 700);

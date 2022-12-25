@@ -10,6 +10,7 @@ public class JumlahTableModel extends AbstractTableModel {
 
     public JumlahTableModel(List<Jumlah> data) {
         this.data = data;
+        System.out.println(data);
     }
 
     public int getColumnCount() {

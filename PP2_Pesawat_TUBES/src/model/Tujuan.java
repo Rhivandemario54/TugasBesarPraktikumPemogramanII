@@ -21,6 +21,7 @@ public class Tujuan {
         this.tujuanpen = tujuanpen;
     }
 
-    public void setTujuanpen(String string) {
+    public void setTujuanpen(String tujuanpen) {
+        this.tujuanpen = tujuanpen;
     }
 }
